@@ -1,0 +1,6 @@
+ table,th,td{
+            border:2px black solid;
+            border-collapse: collapse;
+            background-color:aquamarine;
+            border-color: black;
+        }
