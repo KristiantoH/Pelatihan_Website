@@ -1,6 +1,24 @@
- table,th,td{
-            border:2px black solid;
-            border-collapse: collapse;
-            background-color:aquamarine;
-            border-color: black;
+table, th, td, tr{
+    border:2px black;
+    border-collapse: collapse;
+    background-color: aqua;
+    border-color: black;
+}
+body{
+            background-image: url("Foto dan Gambar Kelinci Linci kelinci imut kelinci cantik foto kelinci kelinci manis wallpaper kelinci ternak kelinci memelihara kelinci (3).jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        a:link{
+            color:yellow;
+            font-style: oblique;
+        }
+        a:visited{
+            color:green;
+        }
+        a:hover{
+            color:red;
+        }
+        a:active{
+            color: purple;
         }

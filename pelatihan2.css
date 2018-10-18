@@ -1,0 +1,26 @@
+.WarnaBiru{
+    color: blue
+}
+.Miring {
+    font-style: italic
+}
+
+body{
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+a:link{
+    color:yellow;
+    font-style: oblique;
+}
+a:visited{
+    color:green;
+}
+a:hover{
+    color:red;
+}
+a:active{
+    color: purple;
+}
