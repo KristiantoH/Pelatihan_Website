@@ -1,0 +1,97 @@
+<!DOCTYPE <!<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("#hide").click(function(){
+            $("p").hide(1000);
+        });
+    });
+    $(document).ready(function(){
+        $("#show").click(function(){
+            $("p").show(1000);
+        });
+    });
+    $(document).ready(function(){
+        $("#toggle").click(function(){
+            $("p").toggle(1000);
+        });
+    });
+    $(document).ready(function(){
+        $("#fadein").click(function(){
+            $("#div1").fadeIn();
+            $("#div2").fadeIn("slow");
+            $("#div3").fadeIn(2000);
+        });
+    });
+    $(document).ready(function(){
+        $("#fadeout").click(function(){
+            $("#div1").fadeOut();
+            $("#div2").fadeOut("slow");
+            $("#div3").fadeOut(2000);
+        });
+    });
+    $(document).ready(function(){
+        $("#slidedown").click(function(){
+            $("#panel").slideDown("slow");
+        });
+    });
+    $(document).ready(function(){
+        $("#slideup").click(function(){
+            $("#panel").slideUp("slow");
+        });
+    });
+    $(document).ready(function(){
+        $("#slidetoggle").click(function(){
+            $("#panel").slideToggle("slow");
+        });
+    });
+    $(document).ready(function(){
+        $("#perbesar").click(function(){
+            $("#objek").animate({
+                left: '250px',
+                height: '+=50px',
+                width: '+=50px'
+            })
+        });
+    });
+    </script>
+</head>
+<body>
+    <button id="perbesar">Animasikan</button>
+    <div id="objek" style="background:forestgreen;height:100px;width:100px;position:absolute;"></div>
+    <style>
+    #panel, #slidedown,#slideup, #slidetoggle{
+        padding:5px;
+        text-align: center;
+        background-color: red;
+        border: solid 1px blue;
+    }    
+    #panel{
+        padding: 50px;
+        display: none;
+    }
+    </style>
+    <div id="slidedown">Klik Disini Slidedown</div>
+    <div id="panel">Halo!</div>
+    <div id="slideup">Klik Disini slideup</div>
+    <div id="slidetoggle">Klik Disini slidetoggle</div>
+
+    <p>Coba-coba</p>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="toggle">Toggle</button>
+    <button id="fadein">Fadein</button>
+    <button id="fadeout">Fadeout</button>
+    <div id="div1" style="width:80px;height:80px; display: none; background-color: red"><br></div>
+    <div id="div2" style="width:80px;height:80px; display: none; background-color: blue"><br></div>
+    <div id="div3" style="width:80px;height:80px; display: none; background-color: green"><br></div>
+</body>
+</html>
